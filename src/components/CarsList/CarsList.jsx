@@ -11,6 +11,8 @@ import CarsListItem from 'components/CarsListItem/CarsListItem';
 import css from './CarsList.module.css';
 
 function CarsList() {
+
+
   const [pageSize, setPageSize] = useState(8);
   const items = useSelector(selectCars);
   const isLoading = useSelector(selectIsLoading);
@@ -21,15 +23,27 @@ function CarsList() {
     setPageSize(pageSize + 8);
   };
 
-  const filteredCars = items.filter(
-    item =>
-      item.make.toLowerCase() === brand.toLowerCase() &&
-      item.mileage >= mileageFrom
-  );
+  let filteredCars = [...items];
+  
+  if (brand !== "") {
+    filteredCars = filteredCars.filter(
+      item => item.make.toLowerCase() === brand.toLowerCase()
+    );
+  }
 
-  // && item.mileage >= mileageFrom && item.mileage <= mileageTo
-  // && item.mileage <= mileageTo
-  // && item.rentalPrice === price
+  if (price !== "") {
+    filteredCars = filteredCars.filter(
+      item => parseInt(item.rentalPrice.substring(1)) <= parseInt(price)
+    );
+  }
+
+  if (mileageFrom !== '') {
+    filteredCars = filteredCars.filter(item => item.mileage >= mileageFrom);
+  }
+
+  if (mileageTo !== '') {
+    filteredCars = filteredCars.filter(item => item.mileage <= mileageTo);
+  }
 
   if (isLoading) {
     return <div>Loading...</div>;

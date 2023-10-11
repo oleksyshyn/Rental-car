@@ -22,8 +22,9 @@ function CarsListItem({
 }) {
   const favorites = useSelector(selectFavorites);
   const [isShowModal, setIsShowModal] = useState(false);
-
   const dispatch = useDispatch();
+
+  const addressArray = address.split(',');
 
   const addFavoriteCarHandler = id => {
     dispatch(addToFavorite(id));
@@ -67,9 +68,7 @@ function CarsListItem({
         </div>
 
         <div className={css.description}>
-          <p>{`${address.split(',')[1]} | ${
-            address.split(',')[2]
-          } | ${rentalCompany}`}</p>
+          <p>{`${addressArray}[1]} | ${addressArray[2]} | ${rentalCompany}`}</p>
           <p>{`${type} | ${model} | ${mileage} | ${accessories[0]}`}</p>
         </div>
       </div>
