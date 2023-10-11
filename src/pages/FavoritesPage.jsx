@@ -18,8 +18,8 @@ function FavoritePage() {
       <Container>
         <div
           style={{
-            padding: '16px',
-            // backgroundColor: 'gray',
+            display: 'flex',
+            paddingTop: '30px',
           }}
         >
           <Sidebar />

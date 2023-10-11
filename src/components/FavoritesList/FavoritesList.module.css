@@ -1,0 +1,17 @@
+.favorites {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.favoritesCarsList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 29px;
+}
+
+.favoritesCarsListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

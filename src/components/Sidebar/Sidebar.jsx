@@ -1,6 +1,5 @@
 import React from 'react';
 import { funds } from '../../utils/support-funds';
-// import fund1 from '../../images/Fund1.png';
 
 import css from './Sidebar.module.css';
 
