@@ -1,0 +1,154 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100vw;
+    height: 100vh; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(18, 20, 23, .5);
+    z-index: 1200;
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 541px;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--white-color);
+    transform: translate(-50%, -50%);
+    /* padding: 40px; */
+    overflow: auto;
+}
+
+.closeModalIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modalWrapper {
+    padding: 40px;
+}
+
+.container {
+    width: 461px;
+    height: 248px;
+    margin-bottom: 14px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.info {
+    margin-bottom: 24px;
+}
+
+.carInfo {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin-bottom: 8px; 
+}
+
+.model {
+    color: var(--blue-color);
+}
+
+.carDescription {
+    margin-bottom: 14px;
+}
+
+.carPrimaryDescription,
+.carSecondaryDescription {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.carPrimaryDescription {
+    margin-bottom: 4px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.secondCarDescription {
+    margin-bottom: 24px;
+}
+
+.firstSubTitle {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black-color);
+}
+
+.thirdCarDescription {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.rentalConditions {
+    margin-bottom: 8px;
+}
+
+.conditionsList {
+    list-style: none;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.conditionsListItem {
+    border-radius: 35px;
+    color: #363535;
+    background-color: #F9F9F9;
+    padding: 7px 14px;
+}
+
+.activeColor {
+    color: var(--blue-color);
+}
+
+.rentalCar {
+    width: 168px;
+    height: 44px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rentalCar:hover {
+    background-color: var(--secondary-blue-color);
+}
+
+.rentalCarLink {
+    text-decoration: none;
+    color: var(--white-color);
+}

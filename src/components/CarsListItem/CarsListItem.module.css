@@ -1,0 +1,92 @@
+.carsList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px 29px;
+}
+
+.carsListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 274px;
+    height: 268px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.favoriteToggle {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.carInfo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin-bottom: 8px;
+}
+
+.model {
+    color: var(--blue-color);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(18, 20, 23, 0.5);
+    margin-bottom: 28px;
+}
+
+.LearnMoreBtn {
+    height: 44px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.LearnMoreBtn:hover {
+    background-color: var(--secondary-blue-color);
+}
+
+.LoadMore {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.LoadMore:hover {
+    color: var(--secondary-blue-color);
+}
