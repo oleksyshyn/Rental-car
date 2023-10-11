@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { selectCars } from 'redux/selectors';
 import closeModalIcon from '../../images/x.svg';

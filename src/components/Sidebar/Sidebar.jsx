@@ -11,7 +11,7 @@ function Sidebar() {
         <ul className={css.fundsList}>
           {funds.map(({ img, url, title }) => (
             <li className={css.fundsListItem} key={title}>
-              <a href={url} target="_blank">
+              <a href={url} target="_blank" rel="noreferrer">
                 <img src={img} alt={title} />
               </a>
             </li>
